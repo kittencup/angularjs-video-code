@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angularjs-视频教程-001-简介</title>
+</head>
+<body>
+
+<script>
+
+    var A = function () {
+        this.getName = function () {
+            return '张三';
+        }
+    }
+
+    var a = new A;
+
+    var B = function () {
+        // B 依赖于 a
+        document.write(a.getName());
+    }
+
+    // a 注入 ba
+    var b = new B();
+
+    // js里2个方法
+    // 1. 将a 传入到b里面去
+    // 2. a是全局变量
+
+</script>
+</body>
+</html>

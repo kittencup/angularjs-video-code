@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../vendor/bootstrap3/css/bootstrap.min.css"/>
+</head>
+<body>
+<div ng-app="myApp">
+
+    <div class="container">
+        <div ng-controller="firstController">
+
+            <kittencup-group>
+
+                <kittencup-collapse ng-repeat="collapse in data" heading="{{collapse.title}}">
+                    {{collapse.content}}
+                </kittencup-collapse>
+
+            </kittencup-group>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<script type="text/javascript" src="../../vendor/angular/angularjs.js"></script>
+<script type="text/javascript" src="app/index.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<div ng-app="myApp">
+
+
+    <div ng-controller="firstController">
+
+        <!--123,456,789-->
+        <p>{{123456789 | number}}</p>
+        <!--12,345.679-->
+        <p>{{12345.6789 | number:3}}</p>
+
+        <!--$999,999.00-->
+        <p>{{999999 | currency}}</p>
+        <!--rmb999,999.00-->
+        <p>{{999999 | currency:'rmb'}}</p>
+
+        <p>
+            default:{{ today }}
+        </p>
+
+        <p>
+            medium: {{ today | date:'medium'}}
+        </p>
+
+        <p>
+            short:{{ today | date:'short'}}
+        </p>
+
+        <p>
+            fullDate:{{ today | date:'fullDate'}}
+        </p>
+
+        <p>
+            longDate:{{ today | date:'longDate'}}
+        </p>
+
+        <p>
+            mediumDate:{{ today | date:'mediumDate'}}
+        </p>
+
+        <p>
+
+            shortDate:{{ today | date:'shortDate'}}
+        </p>
+
+        <p>
+            mediumTime:{{ today | date:'mediumTime'}}
+        </p>
+
+        <p>
+            shortTime:{{ today | date:'shortTime'}}
+        </p>
+
+        <p>
+            year:
+            {{today | date : 'y'}}
+            {{today | date : 'yy'}}
+            {{today | date : 'yyyy'}}
+        </p>
+        <p>
+            month:
+            {{today | date : 'M'}}
+            {{today | date : 'MM'}}
+            {{today | date : 'MMM'}}
+            {{today | date : 'MMMM'}}
+        </p>
+        <p>
+            day:
+            {{today | date : 'd'}}
+            Day in month {{today | date : 'dd'}}
+            Day in week {{today | date : 'EEEE'}}
+            {{today | date : 'EEE'}}
+        </p>
+
+        <p>
+            hour:
+            {{today | date : 'HH'}}
+            {{today | date : 'H'}}
+            {{today | date : 'hh'}}
+            {{today | date : 'h'}}
+        </p>
+
+        <p>
+            minute:
+            {{today | date : 'mm'}}
+            {{today | date : 'm'}}
+        </p>
+
+        <p>
+            second:
+            {{today | date : 'ss'}}
+            {{today | date : 's'}}
+            {{today | date : '.sss'}}
+        </p>
+
+        <p>
+            {{today | date : 'y-MM-d H:m:s'}}
+        </p>
+
+
+</div>
+
+<script type="text/javascript" src="../../vendor/angular/angularjs.js"></script>
+<script type="text/javascript" src="app/index.js"></script>
+
+
+</body>
+</html>
